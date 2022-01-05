@@ -29,9 +29,17 @@ export default function Ideas() {
   }
 
   return (
-    <div>
-      <div dangerouslySetInnerHTML={{ __html: ideasData[ideaIndex] }}></div>
-      <button onClick={() => refreshIdea()}>Get another idea</button>
+    <div className="max-w-prose">
+      <div
+        className="text-2xl"
+        dangerouslySetInnerHTML={{ __html: ideasData[ideaIndex] }}
+      ></div>
+      <button
+        className="mt-8 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+        onClick={() => refreshIdea()}
+      >
+        Get another idea
+      </button>
     </div>
   )
 }
