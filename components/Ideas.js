@@ -1,13 +1,31 @@
 import { useState } from 'react'
 import { ideasData } from '../components/IdeasData'
 
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex--
+    ;[array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ]
+  }
+  return array
+}
+
 export default function Ideas() {
-  // console.log(ideasData)
-  // const ideas = [`this <a href="asdf">asdf</a>`, 'b', 'c']
+  shuffle(ideasData)
   const [ideaIndex, setIdeaIndex] = useState(0)
 
   function refreshIdea() {
-    setIdeaIndex(1)
+    if (ideaIndex < ideasData.length) {
+      setIdeaIndex(ideaIndex + 1)
+    } else {
+      shuffle(ideasData)
+      setIdeaIndex(0)
+    }
   }
 
   return (
@@ -17,4 +35,3 @@ export default function Ideas() {
     </div>
   )
 }
-
