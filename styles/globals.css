@@ -7,19 +7,10 @@
     @apply bg-gray-800;
     @apply text-blue-300;
   }
+  a {
+    @apply text-blue-500;
+  }
   h1 {
     @apply text-xl;
-  }
-  #container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @apply text-sm;
-  }
-  .tiny {
-    font-size: 0.7rem;
-  }
-  .half {
-    flex: 1
   }
 }

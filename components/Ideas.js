@@ -29,17 +29,30 @@ export default function Ideas() {
   }
 
   return (
-    <div className="max-w-prose">
-      <div
-        className="text-2xl"
-        dangerouslySetInnerHTML={{ __html: ideasData[ideaIndex] }}
-      ></div>
-      <button
-        className="mt-8 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-        onClick={() => refreshIdea()}
-      >
-        Get another idea
-      </button>
+    <div>
+      <div className="h-screen">
+        <div
+          className={`text-gray-400 flex flex-col items-center justify-center h-1/6`}
+        >
+          <div>Need an idea for a programming project?</div>
+          <div>Here ya go...</div>
+        </div>
+        <div className="flex flex-col items-center justify-center h-1/4">
+          <div
+            className="text-2xl w-2/3 text-center lg:max-w-prose"
+            dangerouslySetInnerHTML={{ __html: ideasData[ideaIndex] }}
+          ></div>
+        </div>
+        <div className="text-center">
+          <button
+            className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+            onClick={() => refreshIdea()}
+          >
+            Get another idea
+          </button>
+        </div>
+      </div>
+      <div className="max-w-prose"></div>
     </div>
   )
 }
