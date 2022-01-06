@@ -20,7 +20,10 @@ export default function Home() {
         />
         <meta property="og:url" content={`https://ideas.alanwsmith.com`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:image" content="/open-graph.png" />
+        <meta
+          property="og:image"
+          content="https://ideas.alanwsmith.com/open-graph.png"
+        />
       </Head>
       <main>
         <Ideas />
