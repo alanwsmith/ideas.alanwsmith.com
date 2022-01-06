@@ -25,6 +25,24 @@ export default function Home() {
           content="https://ideas.alanwsmith.com/open-graph.png"
         />
       </Head>
+      <header>
+        <div className="text-sm text-right pr-2 bg-gray-900">
+          <a className="text-gray-500" href="https://twitter.com/TheIdOfAlan">
+            twitter
+          </a>{' '}
+          -{' '}
+          <a className="text-gray-500" href="https://www.alanwsmith.com/">
+            site
+          </a>{' '}
+          -{' '}
+          <a
+            className="text-gray-500"
+            href="https://www.alanwsmith.com/the-pod-of-alan"
+          >
+            podcast
+          </a>
+        </div>
+      </header>
       <main>
         <Ideas />
       </main>
