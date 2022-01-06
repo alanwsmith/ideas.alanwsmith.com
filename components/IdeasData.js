@@ -124,7 +124,7 @@ export const ideasData = [
 `Create a chat app using web sockets`,
 `Create transcripts and closed caption automatically with the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API">Web Speech API</a>`,
 `Build a click/tap game where a target shows up randomly on the page that you have to cick and then another shows up and you're timed to see how quickly you can hit 20 of them`,
-`Make a sudoku, but with emoji`,
+`Sudoku, but with emoji`,
 `Make a sudoku game`,
 `Create a red light, green light game where you have to click to make progress, but if you click when it's a red light you lose`,
 `Build an automated screenshot re-namer that changes mac screenshot file names to something that actually sorts`,

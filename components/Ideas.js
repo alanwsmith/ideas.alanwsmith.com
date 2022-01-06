@@ -31,19 +31,17 @@ export default function Ideas() {
   return (
     <div>
       <div className="h-screen">
-        <div
-          className={`text-gray-400 flex flex-col items-center justify-center h-1/6`}
-        >
+        <div className="text-gray-400 flex flex-col items-center justify-center h-1/6">
           <div>Need an idea for a programming project?</div>
           <div>Here ya go...</div>
         </div>
-        <div className="flex flex-col items-center justify-center h-1/4">
+        <div className="flex flex-col items-center justify-center h-1/6">
           <div
             className="text-2xl w-2/3 text-center lg:max-w-prose"
             dangerouslySetInnerHTML={{ __html: ideasData[ideaIndex] }}
           ></div>
         </div>
-        <div className="text-center">
+        <div className="flex flex-col items-center justify-center h-1/6">
           <button
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
             onClick={() => refreshIdea()}
