@@ -8,7 +8,7 @@
     @apply text-blue-300;
   }
   a {
-    @apply text-blue-500;
+    @apply text-gray-400;
   }
   h1 {
     @apply text-xl;
