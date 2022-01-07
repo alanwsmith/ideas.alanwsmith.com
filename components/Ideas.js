@@ -31,10 +31,6 @@ export default function Ideas() {
     }
   }
 
-  function makeKey(initialString) {
-    return initialString.replace(/\W/g, '')
-  }
-
   const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
@@ -44,11 +40,11 @@ export default function Ideas() {
   const returnValue = (
     <div>
       <div className="h-screen">
-        <div className="text-gray-400 flex flex-col items-center justify-center h-1/6">
+        <div className="text-gray-400 flex flex-col items-center justify-center h-1/4">
           <div>Need an idea for a programming project?</div>
           <div>Here ya go...</div>
         </div>
-        <div className="flex flex-col items-center justify-center h-1/6">
+        <div className="flex flex-col items-center justify-center h-1/4">
           <div
             className="text-2xl w-2/3 text-center lg:max-w-prose"
             dangerouslySetInnerHTML={{
@@ -56,7 +52,7 @@ export default function Ideas() {
             }}
           ></div>
         </div>
-        <div className="flex flex-col items-center justify-center h-1/6">
+        <div className="flex flex-col items-center justify-center h-1/4">
           <button
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
             onClick={() => refreshIdea()}
@@ -64,13 +60,6 @@ export default function Ideas() {
             Get another idea
           </button>
         </div>
-      </div>
-      <div>
-        <ul>
-          {ideasArray.map((idea) => (
-            <li key={makeKey(idea)}>{idea}</li>
-          ))}
-        </ul>
       </div>
     </div>
   )
