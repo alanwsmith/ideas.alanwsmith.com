@@ -78,12 +78,12 @@ export default function Home() {
       </Head>
       <header>
         <div className="text-sm text-right pr-2 bg-gray-900">
-          <a className="text-gray-500" href="https://twitter.com/TheIdOfAlan">
-            twitter
+          <a className="text-gray-500" href="https://www.alanwsmith.com/">
+            main site
           </a>{' '}
           -{' '}
-          <a className="text-gray-500" href="https://www.alanwsmith.com/">
-            site
+          <a className="text-gray-500" href="https://twitter.com/TheIdOfAlan">
+            twitter
           </a>{' '}
           -{' '}
           <a

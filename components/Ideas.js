@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ideasData } from '../components/IdeasData'
 
 function shuffle(array) {
@@ -15,20 +15,33 @@ function shuffle(array) {
   return array
 }
 
+const shuffledArray = shuffle(ideasData)
+
 export default function Ideas() {
-  shuffle(ideasData)
   const [ideaIndex, setIdeaIndex] = useState(0)
+  const [ideasArray, setIdeaArray] = useState(shuffledArray)
 
   function refreshIdea() {
-    if (ideaIndex < ideasData.length) {
-      setIdeaIndex(ideaIndex + 1)
+    if (ideaIndex < ideasArray.length) {
+      const newIndex = ideaIndex + 1
+      setIdeaIndex(newIndex)
     } else {
-      shuffle(ideasData)
+      setIdeaArray(shuffle(ideasData))
       setIdeaIndex(0)
     }
   }
 
-  return (
+  function makeKey(initialString) {
+    return initialString.replace(/\W/g, '')
+  }
+
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  const returnValue = (
     <div>
       <div className="h-screen">
         <div className="text-gray-400 flex flex-col items-center justify-center h-1/6">
@@ -38,7 +51,9 @@ export default function Ideas() {
         <div className="flex flex-col items-center justify-center h-1/6">
           <div
             className="text-2xl w-2/3 text-center lg:max-w-prose"
-            dangerouslySetInnerHTML={{ __html: ideasData[ideaIndex] }}
+            dangerouslySetInnerHTML={{
+              __html: `<div>${ideasArray[ideaIndex]}</div>`,
+            }}
           ></div>
         </div>
         <div className="flex flex-col items-center justify-center h-1/6">
@@ -50,7 +65,15 @@ export default function Ideas() {
           </button>
         </div>
       </div>
-      <div className="max-w-prose"></div>
+      <div>
+        <ul>
+          {ideasArray.map((idea) => (
+            <li key={makeKey(idea)}>{idea}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
+
+  return <> {isMounted ? returnValue : null}</>
 }
