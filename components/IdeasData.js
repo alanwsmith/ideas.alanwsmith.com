@@ -159,4 +159,12 @@ export const ideasData = [
 `Make a progress bar for the number of days in the year`,
 `Make a video player that plays a random video from a curated playlist like <a href="https://www.surftech.tv/">surftech.tv</a> `,
 `Show standard programming techniques (e.g. looping over a list/array) in seven different programming languages`,
+`Build a personal version of a bookmark site like <a href="https://pinboard.in/">Pinboard</a>`,
+`Setup a process to collect all the web pages you visit each day`,
+`Make a <a href="https://en.wikipedia.org/wiki/Mastermind_(board_game)">Mastermind</a> clone`,
+`Make Pokemon stat cards with the <a href="https://pokeapi.co/">PokeAPI</a>`,
+`Make a text to brail tool`,
+`Convert text to <a href="https://en.wikipedia.org/wiki/Morse_code">Morse code</a>`,
+`Setup a graphic that shows the binary representations of letters you type`,
+`Make word clouds from <a href="http://shakespeare.mit.edu/">Shakespeare</a>`,
 ]
