@@ -10,6 +10,7 @@ with open('../components/IdeasData.js', 'w') as _output:
         for line in lines:
             string_list = line.split('- ')
             if len(string_list) == 2:
+                print(string_list[1])
                 _output.write(f"`{string_list[1]}`,\n")
 
     _output.write("]")
