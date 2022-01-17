@@ -77,17 +77,18 @@ export default function Home() {
         />
       </Head>
       <header>
-        <div className="text-sm text-right pr-2 bg-gray-900">
-          <a className="text-gray-500" href="https://www.alanwsmith.com/">
-            main site
+        <div className="text-sm text-right pr-2 bg-gray-900 text-gray-400">
+          made by{' '}
+          <a className="text-blue-400" href="https://twitter.com/TheIdOfAlan">
+            alan w. smith
           </a>{' '}
-          -{' '}
-          <a className="text-gray-500" href="https://twitter.com/TheIdOfAlan">
-            twitter
+          who has a{' '}
+          <a className="text-blue-400" href="https://www.alanwsmith.com/">
+            website
           </a>{' '}
-          -{' '}
+          and a{' '}
           <a
-            className="text-gray-500"
+            className="text-blue-400"
             href="https://www.alanwsmith.com/the-pod-of-alan"
           >
             podcast
