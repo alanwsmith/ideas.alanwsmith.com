@@ -303,4 +303,6 @@ export const ideasData = [
 `Use <a href="https://www.openstreetmap.org/">Open Street Maps</a> to determine the driving distance between New Orleans, LA and Springfield, MO`,
 `Build your own, personal read-later service`,
 `Build a random number generator where you can set the low and high numbers`,
+`A bot that responds "it depends" to any tweet that ends in a question`,
+`A Trading Fours website. Small groups where one person at a time posts four songs. Key rule is no one can post twice in a row`,
 ]
