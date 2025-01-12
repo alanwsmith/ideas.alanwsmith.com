@@ -29,3 +29,10 @@ complicated.
 
 When I have time I'll redo it as vanilla js
 
+## TODO
+
+If necessary, update the randomizer so that it
+creates a new order on refresh but makes sure
+items aren't repeated until they have all 
+been seen
+
