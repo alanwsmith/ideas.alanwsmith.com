@@ -384,4 +384,5 @@ export const ideasData = [
 `Build your own Ideas site`,
 `Setup a process to automatically move windows to different layouts`,
 `Create a tool that let's you past in HTML and generates a graphical tree view of the code`,
+`Use the Amazon API to build a page with cool $10 items that people can use to get to the free shipping threshold`,
 ]
