@@ -1,0 +1,143 @@
+[!- set meta_title = "Ideas for Projects" -!]
+[!- set meta_description = "A collection of things to work on if you need an idea for a coding project." -!]
+[!- set meta_url = "https://ideas.alanwsmith.com/" -!]
+[!- set meta_image = "https://ideas.alanwsmith.com/images/og-main.png" -!]
+[!- set source_link = "" -!]
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[@ meta_title @]</title>
+<meta property="og:title" content="[@ meta_title @]">
+<meta property="og:description" content="[@ meta_description @]">
+<meta name="description" content="[@ meta_description @]">
+<meta property="og:type" content="article">
+<meta property="og:url" content="[@ meta_url @]">
+<meta property="og:image" content="[@ meta_image @]">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<!--
+    <link rel="stylesheet" href="/styles/main.css">
+-->
+
+  <style>
+    :root {
+      --background-color: oklch(93.076% 0.03467 92.999);
+      --color: oklch(33.076% 0.03467 92.999);
+      --a-color: oklch(53.076% 0.23467 332.999);
+      --a-hover-color: oklch(33.076% 0.13467 212.999);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background-color: oklch(20.076% 0.03467 92.999);
+        --color: oklch(83.076% 0.03467 92.999);
+        --a-color: oklch(83.076% 0.23467 332.999);
+        --a-hover-color: oklch(83.076% 0.13467 212.999);
+      }
+    }
+
+    html {
+      color-scheme: light dark;
+    }
+
+    *, 
+    *::before, 
+    *::after {
+      box-sizing: border-box;
+    }
+
+    * {
+      margin: 0;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--color);
+      font-family: system-ui;
+    }
+
+    a {
+      color: var(--a-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--a-hover-color);
+      text-decoration: underline;
+    }
+
+    .button-wrapper {
+      text-align: center;
+    }
+
+    .display {
+      min-height: 4rem;
+      text-align: center;
+    } 
+
+    footer {
+      font-size: 0.86rem;
+      margin-block: 1.8rem;
+      text-align: center;
+    }
+
+    header {
+      font-size: 0.86rem;
+      margin-top: 0.8rem;
+      margin-bottom: 1.8rem;
+      text-align: center;
+    }
+
+    .intro {
+      margin-block: 2.2rem;
+      text-align: center;
+    }
+
+    .wrapper {
+      width: min(100vw - 3rem, 58ch);
+      margin-inline: auto;
+    }
+
+    </style>
+
+    <script>
+    [! include "_includes/data.json" !]
+    </script>
+  </head>
+  <body class="wrapper">
+    <header>
+      made by <a href="https://www.alanwsmith.com">alan w smith</a>
+      ~
+      <a href="https://socials.alanwsmith.com">socials</a>
+      [@ source_link @]
+      ~
+      <a href="https://links.alanwsmith.com">other projects</a>
+    </header>
+    <main>
+    [! block main !][! endblock !]
+    </main>
+    <footer>
+      made by <a href="https://www.alanwsmith.com">alan w smith</a>
+      ~
+      <a href="https://socials.alanwsmith.com">socials</a>
+      [@ source_link @]
+      ~
+      <a href="https://links.alanwsmith.com">other projects</a>
+    </footer>
+    <script src="/modules/bitty-v0.3.0.js" type="module"></script>
+  </body>
+</html>
+
+

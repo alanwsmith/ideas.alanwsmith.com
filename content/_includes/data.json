@@ -1,0 +1,5 @@
+const data = [
+  "this is a thing",
+  "another thing",
+  "a third thing"
+]
