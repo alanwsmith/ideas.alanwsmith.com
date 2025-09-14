@@ -1,0 +1,20 @@
+[! extends "_wrappers/main.html" !]
+
+[! block main !]
+
+
+<bitty-js data-connection="/modules/ideas.js" data-send="update">
+  <div class="intro">Need an idea for a programming project?<br>Here ya go.</div>
+  <div class="display" data-receive="update">
+    <noscript>
+      <div>NOTE: This page requires JavaScript. It appears to either be off or not available in your browser/reader</div>
+    </noscript>
+  </div>
+  <div class="button-wrapper">
+    <button data-send="update">Get a new idea</button>
+  </div>
+</bitty-js>
+
+[! endblock !]
+
+
