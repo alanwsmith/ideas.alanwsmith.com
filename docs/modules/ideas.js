@@ -1,5 +1,6 @@
 export default class {
   #recent = [];
+
   update(el, _event) {
     let newNum;
     if (this.#recent.length > 50) {

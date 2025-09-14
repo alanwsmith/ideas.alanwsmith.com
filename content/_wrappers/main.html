@@ -34,14 +34,16 @@
     :root {
       --background-color: oklch(93.076% 0.03467 92.999);
       --color: oklch(33.076% 0.03467 92.999);
+      --color-faded: oklch(33.076% 0.03467 92.999 / 16%);
       --a-color: oklch(53.076% 0.23467 332.999);
       --a-hover-color: oklch(33.076% 0.13467 212.999);
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --background-color: oklch(20.076% 0.03467 92.999);
+        --background-color: oklch(16.009% 0.06788 244.875);
         --color: oklch(83.076% 0.03467 92.999);
+        --color-faded: oklch(83.076% 0.03467 92.999 / 16%);
         --a-color: oklch(83.076% 0.23467 332.999);
         --a-hover-color: oklch(83.076% 0.13467 212.999);
       }
@@ -81,7 +83,12 @@
       text-align: center;
     }
 
+    .button-wrapper > button {
+      font-size: 1.2rem;
+    }
+
     .display {
+      background-color: var(--color-faded);
       border: 1px solid var(--color);
       border-radius: 0.5rem;
       font-size: 1.3rem;
