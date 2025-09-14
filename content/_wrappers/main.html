@@ -2,7 +2,6 @@
 [!- set meta_description = "A collection of things to work on if you need an idea for a coding project." -!]
 [!- set meta_url = "https://ideas.alanwsmith.com/" -!]
 [!- set meta_image = "https://ideas.alanwsmith.com/images/og-main.png" -!]
-[!- set source_link = "" -!]
 
 <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +82,13 @@
     }
 
     .display {
-      min-height: 4rem;
+      border: 1px solid var(--color);
+      border-radius: 0.5rem;
+      font-size: 1.3rem;
+      margin-block: 1.2rem;
+      min-height: 10rem;
+      padding-block: 1.3rem;
+      padding-inline: 1.1rem;
       text-align: center;
     } 
 
@@ -106,35 +111,31 @@
     }
 
     .wrapper {
-      width: min(100vw - 3rem, 58ch);
+      width: min(100vw - 3rem, 52ch);
       margin-inline: auto;
     }
 
     </style>
 
     <script>
-    [! include "_includes/data.json" !]
+    [! include "_generated/data.js" !]
     </script>
   </head>
   <body class="wrapper">
-    <header>
-      made by <a href="https://www.alanwsmith.com">alan w smith</a>
-      ~
-      <a href="https://socials.alanwsmith.com">socials</a>
-      [@ source_link @]
-      ~
-      <a href="https://links.alanwsmith.com">other projects</a>
-    </header>
     <main>
     [! block main !][! endblock !]
     </main>
     <footer>
+      <div>
       made by <a href="https://www.alanwsmith.com">alan w smith</a>
+      </div>
+      <div>
+      <a href="https://github.com/alanwsmith/ideas.alanwsmith.com">source code</a>
       ~
       <a href="https://socials.alanwsmith.com">socials</a>
-      [@ source_link @]
       ~
       <a href="https://links.alanwsmith.com">other projects</a>
+      </div>
     </footer>
     <script src="/modules/bitty-v0.3.0.js" type="module"></script>
   </body>
