@@ -1,13 +1,17 @@
 export default class {
-  #currentIndex = 0;
+  #recent = [];
   update(el, _event) {
+    let newNum;
+    if (this.#recent.length > 50) {
+      this.#recent.shift();
+    }
     for (let numCheck = 0; numCheck < 100; numCheck += 1) {
-      const newNum = Math.floor(Math.random() * data.length);
-      if (newNum !== this.#currentIndex) {
-        this.#currentIndex = newNum;
-        el.innerHTML = data[this.#currentIndex];
+      newNum = Math.floor(Math.random() * data.length);
+      if (!this.#recent.includes(newNum)) {
+        this.#recent.push(newNum);
         break;
       }
     }
+    el.innerHTML = data[newNum];
   }
 }
